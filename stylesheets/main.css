@@ -9,6 +9,10 @@
   padding: 0px;
   font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
-  user-select: none;
   font-size: calc(1.9vw * 1.9vh);
+}
+
+p {
+  color: #777777;
+  font-weight: 600;
 }

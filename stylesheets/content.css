@@ -4,6 +4,11 @@ body {
   display: flex;
 }
 
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
 nav {
   min-width: 19rem;
   background-color: rgb(252, 134, 83);
@@ -34,7 +39,7 @@ nav {
   position: absolute;
   box-shadow: 0px 0px 6px 1px #ffe471;
   animation: spin 7s infinite linear;
-  background: linear-gradient(287deg, #ff8143, #f5a246, #f89746, #ffe471);
+  background: linear-gradient(287deg, rgb(252, 134, 83), rgb(252, 134, 83), rgb(252, 134, 83), #ffe471);
   z-index: 0;
 }
 
@@ -103,8 +108,7 @@ a:hover:before {
 }
 
 .detail-container>div {
-  /* border: 1px solid red; */
-  flex: 1 0 100vh;
+  flex: 1 0 90vh;
 }
 
 .about {
@@ -181,7 +185,6 @@ a:hover:before {
 .about-social>button {
   border: none;
   outline: none;
-  padding: 5px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -215,4 +218,64 @@ a:hover:before {
   height: 3px;
   border-radius: 19px;
   background-color: #c4c4c4;
+}
+
+#experience {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem;
+}
+
+.experience-title {
+  font-size: calc(2vw + 2vh);
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: gradient 6s ease infinite;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 500% auto;
+}
+
+.company-title-duration {
+  color: #000;
+}
+
+.company-title-duration>p {
+  color: #d56123;
+}
+
+.experience-block {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.company-name {
+  color: #777777;
+}
+
+.tech-stack {
+  margin-top: 0.7rem;
+}
+
+.tech-stack-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tech-stack-list>p {
+  padding: 5px;
+  border: 1px solid #f2f2f2;
+  border-radius: 7PX;
+  color: #b18080;
+  transition: ease-in-out 200ms;
+}
+
+.tech-stack-list>p:hover {
+  box-shadow: 0px 0px 6px 1px;
 }

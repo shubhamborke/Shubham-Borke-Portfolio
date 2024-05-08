@@ -90,11 +90,21 @@
   .name,
   .address,
   .role,
-  .about-describe {
+  .about-describe, .about-social {
     margin-left: 1rem;
   }
+
   .about-describe {
     margin-bottom: 0.8rem;
+  }
+
+  #experience {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .company-title-duration {
+    flex-direction: column;
   }
 
 }
