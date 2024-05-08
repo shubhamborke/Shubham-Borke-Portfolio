@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/main.css" />
+    <link rel="stylesheet" href="./stylesheets/content.css" />
+    <link rel="stylesheet" href="./stylesheets/animation.css" />
+    <link rel="stylesheet" href="./stylesheets/media-query.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <aside class="profile-container">
+        <img
+          src="./public/picture/profile-tablet-markup.jpg"
+          alt="profile"
+          class="profile"
+        />
+      </aside>
+      <h4 class="sm-heading">Personal Portfolio</h4>
+      <div class="sm-humburger-logo">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+      <aside class="navigation-links">
+        <a href="#about">ABOUT</a>
+        <a href="#experience">EXPERIENCE</a>
+        <a href="#education">EDUCATION</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#intrest">INTREST</a>
+        <a href="#resources">RESOURCES</a>
+      </aside>
+    </nav>
+    <main class="detail-container">
+      <div id="about">
+        <img
+          class="sm-profile"
+          src="./public/picture/profile-tablet-markup.jpg"
+        />
+        <h1 class="name" id="profile-name">Shubham Borke</h1>
+        <h3 class="role">
+          <span>Full Stack Developer</span><span class="dot"></span
+          ><span>Front-end Developer</span>
+        </h3>
+        <section class="address">
+          <p>Pune, India</p>
+          <sapn class="dot"></sapn>
+          <p>+91 9503237183,</p>
+          <a class="email" href="mailto:“shubham.borke@gmail.com”"
+            >shubham.borke@gmail.com</a
+          >
+        </section>
+        <div class="about-describe">
+          <p>
+            A JavaScript developer passionate about creating efficient and
+            elegant solutions for web development challenges. Proficient in both
+            front-end and back-end development, dedicated to crafting
+            high-quality and scalable web applications.
+          </p>
+        </div>
+        <div class="about-social">
+          <button><img src="./public/picture/linkedInLogo.png"/></button>
+          <button><img src="./public/picture/githubLogo.png"/></button>
+          <button><img src="./public/picture/hackerRankLogo.png"/></button>
+        </div>
+      </div>
+      <div id="experience">experience</div>
+      <div id="education">education</div>
+      <div id="skills">skills</div>
+      <div id="intrest">intrest</div>
+      <div id="resources">resources</div>
+    </main>
+    <script src="./logics/navigation-menu.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+@media (max-width: 1028px) {
+  body {
+    flex-direction: column;
+  }
+
+  nav {
+    gap: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+  }
+
+  .profile-container {
+    display: none;
+  }
+
+  .sm-heading {
+    display: block;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #009371c8);
+    animation: gradient 4s ease infinite;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 500% auto;
+  }
+
+  .sm-humburger-logo {
+    width: 2.6rem;
+    height: 2.6rem;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .navigation-links {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    height: 0px;
+  }
+
+  .dot {
+    display: none;
+  }
+
+  .address {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 5px;
+  }
+
+  .about-describe {
+    padding: 0px 6px 0px 0px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .sm-profile {
+    display: block;
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 490px) {
+  #about {
+    justify-content: flex-start;
+  }
+
+  .sm-profile {
+    position: static;
+    display: block;
+    width: 100%;
+    height: 12rem;
+    border-radius: 0px;
+  }
+
+  .name,
+  .address,
+  .role,
+  .about-describe {
+    margin-left: 1rem;
+  }
+  .about-describe {
+    margin-bottom: 0.8rem;
+  }
+
+}
