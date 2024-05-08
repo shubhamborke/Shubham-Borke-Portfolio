@@ -18,11 +18,24 @@ nav {
 
 .profile-container {
   border-radius: 50%;
-  border: 8px solid rgba(246, 195, 128, 0.8);
+  width: 14rem;
+  height: 14rem;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  position: relative;
+}
+
+.profile-container::before {
+  content: "";
+  width: 14rem;
+  height: 14rem;
+  position: absolute;
+  box-shadow: 0px 0px 6px 1px #ffe471;
+  animation: spin 7s infinite linear;
+  background: linear-gradient(287deg, #ff8143, #f5a246, #f89746, #ffe471);
+  z-index: 0;
 }
 
 .sm-heading {
@@ -39,6 +52,7 @@ nav {
   height: 13rem;
   box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.1);
   transition: ease-in-out 250ms;
+  z-index: 1;
 }
 
 .profile:hover {
@@ -185,6 +199,7 @@ a:hover:before {
   border-radius: 50%;
   transition: ease-in-out 150ms;
 }
+
 .about-social img:hover {
   transform: scale(0.9);
 }

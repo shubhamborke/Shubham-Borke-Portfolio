@@ -11,3 +11,18 @@
     background-position: 0% 50%;
   }
 }
+
+@keyframes spin {
+  0% {
+   transform: rotate(0deg); 
+  }
+  20% {
+   transform: rotate(1800deg); 
+  }
+  80% {
+   transform: rotate(360deg); 
+  }
+  100% {
+   transform: rotate(0deg); 
+  }
+}

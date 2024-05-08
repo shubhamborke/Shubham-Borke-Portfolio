@@ -17,12 +17,12 @@
 
   .sm-heading {
     display: block;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #009371c8);
+    background: linear-gradient(to right, #be323b, #5a7fd5, #f53381);
     animation: gradient 4s ease infinite;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    background-size: 500% auto;
+    background-size: 600%;
   }
 
   .sm-humburger-logo {
