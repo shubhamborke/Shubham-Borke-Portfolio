@@ -107,8 +107,19 @@ a:hover:before {
   flex: 1;
 }
 
-.detail-container>div {
+#about,
+#experience {
   flex: 1 0 90vh;
+}
+
+#education,
+#intrest,
+#resources {
+  flex: 1 0 50vh;
+}
+
+#skills {
+  flex: 1 0 40vh;
 }
 
 .name {
@@ -205,7 +216,10 @@ a:hover:before {
 }
 
 #experience,
-#education {
+#education,
+#skills,
+#intrest,
+#resources {
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -254,6 +268,105 @@ a:hover:before {
   box-shadow: 0px 0px 6px 1px;
 }
 
+#skills {
+  height: 10vh;
+}
+
+.skills-snap-block {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+.skills-snap-block::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 4rem;
+  height: 100%;
+  background: linear-gradient(to right, white 50%, transparent);
+  z-index: 1;
+}
+
+.skills-snap-block::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 4rem;
+  height: 100%;
+  background: linear-gradient(to left, white 50%, transparent);
+  z-index: 1;
+}
+
+.skills-snap-block:hover .skills-snap {
+  animation-play-state: paused;
+}
+
+.skills-snap {
+  display: inline-block;
+  flex: 1;
+  padding: 20px 0px;
+  animation: slide 15s infinite linear;
+}
+
+.skills-snap>span {
+  width: fit-content;
+  outline: 1px solid #b4b4b4;
+  border-radius: 8px;
+  padding: 8px 10px;
+  box-shadow: 0px 0px 10px 0px rgb(74, 74, 74);
+  margin: 5px;
+  background-color: #3b3b3b;
+  color: rgb(255, 255, 255);
+}
+
 .table {
   overflow: scroll;
+}
+
+.card-block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  background-color: #90cffc39;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 20rem;
+  height: 25rem;
+  box-shadow: 0px 0px 10px 1px rgb(174, 224, 236);
+  transition: ease-in-out 200ms;
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  gap: 1rem;
+  transform: scale(0.9);
+  animation: shadow 1.2s infinite linear;
+}
+
+.card:hover img {
+  width: 12rem;
+  height: 10rem;
+}
+
+.card>img {
+  width: 6rem;
+  height: 5rem;
+  border-radius: 8px;
+  transition: ease-in-out 200ms;
+}
+
+.card>p {
+  text-align: center;
 }

@@ -104,12 +104,16 @@
   }
 
   #experience,
-  #education {
+  #education,
+  #skills,
+  #intrest,
+  #resources {
     padding: 1rem;
     gap: 1rem;
   }
 
-  th, td {
+  th,
+  td {
     min-width: 10rem;
   }
 
