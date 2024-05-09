@@ -103,9 +103,14 @@
     margin-bottom: 0.8rem;
   }
 
-  #experience {
+  #experience,
+  #education {
     padding: 1rem;
     gap: 1rem;
+  }
+
+  th, td {
+    min-width: 10rem;
   }
 
   .company-title-duration {

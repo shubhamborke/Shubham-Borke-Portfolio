@@ -30,3 +30,20 @@ p {
   color: #777777;
   font-weight: 600;
 }
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #dadada;
+  padding: 5px 7px;
+  min-width: 2rem;
+}

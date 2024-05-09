@@ -111,10 +111,6 @@ a:hover:before {
   flex: 1 0 90vh;
 }
 
-.about {
-  transition: ease-in-out 100ms;
-}
-
 .name {
   font-size: calc(3vw + 3vh);
   z-index: 1;
@@ -173,18 +169,11 @@ a:hover:before {
 }
 
 .about-social>a {
-  border: none;
-  outline: none;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: ease-in-out 150ms;
-}
-
-.about-social>a::before {
-  content: "";
-  border: none;
 }
 
 .about-social>a:hover {
@@ -215,7 +204,8 @@ a:hover:before {
   background-color: #c4c4c4;
 }
 
-#experience {
+#experience,
+#education {
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -262,4 +252,8 @@ a:hover:before {
 
 .tech-stack-list>p:hover {
   box-shadow: 0px 0px 6px 1px;
+}
+
+.table {
+  overflow: scroll;
 }
