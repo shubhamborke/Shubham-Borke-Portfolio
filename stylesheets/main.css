@@ -12,6 +12,20 @@
   font-size: calc(1.9vw * 1.9vh);
 }
 
+h1 {
+  font-size: calc(2vw + 2vh);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: gradient 6s ease infinite;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 500% auto;
+}
+
+h2 {
+  font-size: calc(1.1vw + 1.1vh);
+}
+
 p {
   color: #777777;
   font-weight: 600;

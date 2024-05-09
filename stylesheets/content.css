@@ -120,12 +120,6 @@ a:hover:before {
   z-index: 1;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  animation: gradient 6s ease infinite;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-size: 500% auto;
   margin-left: 3rem;
 }
 
@@ -154,8 +148,6 @@ a:hover:before {
   display: flex;
   align-items: center;
   gap: 7px;
-  color: #777777;
-  font-weight: 600;
   margin-left: 3rem;
 }
 
@@ -169,8 +161,6 @@ a:hover:before {
 }
 
 .about-describe {
-  color: #777777;
-  font-weight: 600;
   padding: 0px 40px;
   margin: 3.3rem 0px 3.3rem 3rem;
 }
@@ -182,7 +172,7 @@ a:hover:before {
   gap: 10px;
 }
 
-.about-social>button {
+.about-social>a {
   border: none;
   outline: none;
   border-radius: 50%;
@@ -192,7 +182,12 @@ a:hover:before {
   transition: ease-in-out 150ms;
 }
 
-.about-social>button:hover {
+.about-social>a::before {
+  content: "";
+  border: none;
+}
+
+.about-social>a:hover {
   box-shadow: 0px 0px 4px 5px rgb(199, 226, 236);
 }
 
@@ -228,19 +223,8 @@ a:hover:before {
 }
 
 .experience-title {
-  font-size: calc(2vw + 2vh);
   position: relative;
   overflow: hidden;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  animation: gradient 6s ease infinite;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-size: 500% auto;
-}
-
-.company-title-duration {
-  color: #000;
 }
 
 .company-title-duration>p {

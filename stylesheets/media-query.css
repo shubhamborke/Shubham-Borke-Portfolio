@@ -75,6 +75,10 @@
 }
 
 @media (max-width: 490px) {
+  .detail-container>div {
+    margin-top: 2.52rem;
+  }
+
   #about {
     justify-content: flex-start;
   }
@@ -90,7 +94,8 @@
   .name,
   .address,
   .role,
-  .about-describe, .about-social {
+  .about-describe,
+  .about-social {
     margin-left: 1rem;
   }
 
